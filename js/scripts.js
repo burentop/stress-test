@@ -10,6 +10,16 @@ var findRatio = function(bad, good) {
   }
 }
 
+var pickOutput = function(score) {
+  if (score === 1) {
+    $("#good").show();
+  } else if (score === 0) {
+    $("#medium").show();
+  } else {
+    $("#bad").show();
+  }
+}
+
 $(document).ready(function() {
   $("form#stress-survey").submit(function(event) {
     event.preventDefault();
