@@ -1,3 +1,15 @@
+var findRatio = function(bad, good) {
+  var badCount = bad.length;
+  var goodCount = good.length;
+  if (badCount / goodCount >= 2) {
+    return -1;
+  } else if (badCount / goodCount > 1) {
+    return 0;
+  } else {
+    return 1;
+  }
+}
+
 $(document).ready(function() {
   $("form#stress-survey").submit(function(event) {
     event.preventDefault();
@@ -15,6 +27,6 @@ $(document).ready(function() {
       var copingItem = $(this).val();
       goodResults.push(copingItem);
     });
-    
+
   });
 });
