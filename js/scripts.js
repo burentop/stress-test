@@ -20,6 +20,18 @@ var pickOutput = function(score) {
   }
 }
 
+// var makeRecommendations = function(array) {
+//   var coping = {
+//     "meditate": "Meditation",
+//     "time": "Better time management",
+//     "pet": "Owning a pet",
+//     "prayer": "Prayer"
+//   };
+//   array.forEach(function(cope) {
+//
+//   })
+// }
+
 $(document).ready(function() {
   $("form#stress-survey").submit(function(event) {
     event.preventDefault();
@@ -37,6 +49,7 @@ $(document).ready(function() {
       var copingItem = $(this).val();
       goodResults.push(copingItem);
     });
-
+    var score = findRatio(badResults, goodResults);
+    pickOutput(score);
   });
 });

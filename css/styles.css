@@ -1,3 +1,11 @@
-#good, #medium, #bad {
+#good {
+  display: none;
+}
+
+#medium {
+  display: none;
+}
+
+#bad {
   display: none;
 }
