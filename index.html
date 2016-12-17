@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text.css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Stress Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Are You Stressed?</h1>
+        <p>Answer these questions to discover your stress level:</p>
+      </div>
+      <form id="stress-survey">
+        <div class="form-group">
+          <p>Which of the following have you experienced lately:</p>
+          <input type="checkbox" name="lifestyle" value="sleeping">Trouble sleeping<br>
+          <input type="checkbox" name="lifestyle" value="overwhelmed">Feeling overwhelmed<br>
+          <input type="checkbox" name="lifestyle" value="appetite">Loss of appetite<br>
+        </div>
+        <div class="form-group">
+          <p>Which of the following symptoms have you noticed:</p>
+          <input type="checkbox" name="symptoms" value="blood">High blood pressure<br>
+          <input type="checkbox" name="symptoms" value="anxiety">Feeling of anxiety<br>
+          <input type="checkbox" name="symptoms" value="throbbing">Throbbing in the ears<br>
+        </div>
+        <div class=form-group>
+          <p>Which of the following do you engage in on a regular basis:</p>
+          <input type="checkbox" name="coping" value="meditate">Meditation<br>
+          <input type="checkbox" name="coping" value="time">Time management<br>
+          <input type="checkbox" name="coping" value="pet">Time with a pet<br>
+          <input type="checkbox" name="coping" value="prayer">Prayer<br>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <span id="good">
+        <p><b>You are doing a good job of managing stress. Keep up the good work!</b></p>
+      </span>
+      <span id="medium">
+        <p><b>You're off to a good start with stress management. Here are soe recommendations to improve:</b></p>
+      </span>
+      <span id="bad">
+        <p><b>You need to improve your stress management. Here are some recommendations:</b></p>
+      </span>
+    </div>
+  </body>
+</html>
